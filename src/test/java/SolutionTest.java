@@ -19,4 +19,22 @@ public class SolutionTest {
 
         Assert.assertEquals(expected, actual);
     }
+
+    @Test
+    public void candyTest3() {
+        int[] ratings = {1,2,87,87,87,2,1};
+        int expected = 13;
+        int actual = new Solution().candy(ratings);
+
+        Assert.assertEquals(expected, actual);
+    }
+    //
+    @Test
+    public void candyTest4() {
+        int[] ratings = {1,3,4,5,2};
+        int expected = 11;
+        int actual = new Solution().candy(ratings);
+
+        Assert.assertEquals(expected, actual);
+    }
 }
